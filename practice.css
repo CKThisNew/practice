@@ -1,0 +1,128 @@
+body {
+  height: 100vh;
+}
+
+div {
+  border-radius: 8px;
+  color: white;
+}
+
+.a {
+  width: 100%;
+  height: 100px;
+  background-color: teal;
+  margin-bottom: 20px;
+}
+
+.c {
+  background-color: blue;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100px;
+}
+
+.f {
+  background-color: pink;
+  width: 100%;
+  height: 100px;
+}
+
+.b2,
+.d2,
+.l2 {
+  opacity: 0.7;
+}
+
+.b {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.b2 {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.d {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.d2 {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.l {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.l2 {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.i {
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0.5;
+  height: 0px;
+}
+.i2 {
+  margin-right: 40px;
+  margin-top: -7px;
+}
+
+.pig {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pig img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  opacity: 1px;
+  margin-right: 70px;
+  margin-top: 0px;
+  margin-bottom: -150px;
+}
+
+. .water {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.water {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.water img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  opacity: 1px;
+  margin-right: 70px;
+  margin-top: 0px;
+  margin-bottom: -150px;
+}
+
+.vr {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.vr img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  opacity: 1px;
+  margin-right: 70px;
+  margin-top: 42px;
+  margin-bottom: -150px;
+}
