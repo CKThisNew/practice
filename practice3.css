@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.abc {
+  padding-right: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.b {
+  color: blue;
+}
+.r {
+  color: red;
+}
+.or {
+  color: orange;
+}
+.g {
+  color: green;
+}
+
+.search {
+  width: 550px;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 220px;
+}
+
+.boxes_1 {
+  width: 100px;
+  height: 30px;
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 5px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.boxes_2 {
+  width: 150px;
+  height: 30px;
+  background-color: whitesmoke;
+
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.fa-search {
+  position: relative;
+  top: 15px;
+  left: 20px;
+  opacity: 0.4;
+}
+.fa-keyboard {
+  position: relative;
+  top: 15px;
+  left: 450px;
+  opacity: 0.5;
+}
+
+.fa-microphone {
+  position: relative;
+  top: 14px;
+  left: 460px;
+  color: blue;
+}
+
+.korea {
+  background-color: whitesmoke;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.explain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.inform {
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+.final {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.last {
+  margin-right: 30px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
