@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: tomato;
+  padding: 5px;
+}
+
+.navbar__logo {
+  margin-left: 15px;
+  font-size: 25px;
+}
+.fa-hamburger {
+  color: yellow;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  color: white;
+}
+.choice {
+  display: flex;
+  padding-left: 0;
+}
+.choice li:hover {
+  background-color: yellowgreen;
+  border-radius: 4px;
+}
+
+.choice li {
+  padding: 8px 12px;
+}
+
+.icon {
+  display: flex;
+  padding-left: 0;
+}
+.icon li {
+  padding: 12px;
+}
+.bar {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .choice {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .choice li {
+    width: 100%;
+  }
+  .icon {
+    justify-content: center;
+    width: 100%;
+  }
+  .bar {
+    display: block;
+    position: absolute;
+    top: 6px;
+  }
+  .fa-bars {
+    color: yellow;
+  }
+}
