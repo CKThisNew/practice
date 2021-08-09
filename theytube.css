@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+.fa-youtube {
+  color: red;
+}
+
+.icons .fa-search {
+  margin-right: 15px;
+}
+
+.player {
+  text-align: center;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+}
+
+.hashtag {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.hashtag li {
+  margin-right: 15px;
+  color: blue;
+}
+
+.titleandbutton {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  align-items: center;
+}
+
+button,
+button:focus {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.views {
+  margin-left: 10px;
+  font-size: 13px;
+  color: gray;
+}
+
+.displaybutton {
+  display: flex;
+  justify-content: space-around;
+}
+
+.displaybutton button {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.displaybutton i {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.displaybutton button .fa-thumbs-up {
+  color: blue;
+}
