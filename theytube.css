@@ -87,5 +87,39 @@ button:focus {
 }
 
 .displaybutton button .fa-thumbs-up {
+  color: blue;
+}
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  border-top: 1px solid rgba(128, 128, 128, 0.329);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+}
+
+.channel__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.channel__info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid blueviolet;
+}
+
+.channel__name span {
+  display: block;
+}
+
+.channel__name span:nth-child(2) {
+  font-size: 12px;
+  color: gray;
+}
+
+.sub {
   color: red;
 }
