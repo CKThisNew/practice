@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.titlebox {
+  background-color: orange;
+  height: 100px;
+}
+
+.namebox {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -27px;
+}
+.searchbar input {
+  width: 80%;
+  height: 50px;
+  border-radius: 30px;
+  padding-left: 30px;
+  border: none;
+  box-shadow: 0px 4px 5px 0px gray;
+
+  background-image: url(search.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.bookname {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+.introduce {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.bookcover img {
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 5%;
+  margin-right: 20px;
+}
+
+.nametag li:first-child {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.nametag li:nth-child(2) {
+  margin-bottom: 100px;
+  font-size: 20px;
+  color: gray;
+}
+.nametag li:nth-child(3) {
+  margin-bottom: 30px;
+}
+.nametag li:nth-child(4) {
+  margin-top: 30px;
+}
+
+.nametag button {
+  width: 90px;
+  height: 40px;
+  border-radius: 5%;
+  margin-right: 15px;
+  border: none;
+}
+
+.nametag li .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: orange;
+  margin-right: 30px;
+  border: none;
+  font-size: 20px;
+}
+.nametag li .bookbtn {
+  width: 140px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+.recommend {
+  margin-left: 20px;
+  margin-top: 30px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.scroll {
+  box-sizing: border-box;
+  overflow-x: scroll;
+  width: 700px;
+}
+
+.choice img {
+  width: 100px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5%;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.author {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.authorex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.face {
+  margin-left: 20px;
+}
+.face img {
+  width: 200px;
+  height: 250px;
+  border-radius: 5%;
+  margin-right: 30px;
+}
+
+.pandaintro {
+  line-height: 160%;
+}
+
+.panda {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.pandas {
+  color: rgba(0, 0, 0, 0.2);
+}
