@@ -10,6 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  margin-left: 10px;
 }
 
 .playlist {
@@ -26,7 +27,7 @@ li {
 .bar {
   display: flex;
   justify-content: space-between;
-  margin: 30px 15px 10px 15px;
+  margin: 30px 30px 10px 30px;
 }
 
 .bar a {
@@ -92,6 +93,10 @@ li {
 
 .musicbox {
   padding-right: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
 }
 
 .music-a img {
@@ -179,6 +184,13 @@ li {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 30px;
+  border: 1px solid white;
+  box-shadow: 0px 3px 3px 0px white;
+
+  border-radius: 8px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
 }
 
 .music-c ul {
@@ -244,4 +256,61 @@ li {
 
 .playbutton span:nth-child(3) {
   margin-right: 30px;
+}
+
+.music-on {
+  background-color: #4d2b90;
+  margin-left: 80px;
+  width: 550px;
+  height: 825px;
+  border-radius: 15px;
+  margin-right: 20px;
+  display: felx;
+  justify-content: center;
+  text-align: center;
+}
+
+.album img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.album {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.song_perfect li:first-child {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.songtime {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.playerbuttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.playbt {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #b084f4;
+}
+
+.playbt div {
+  position: relative;
+  top: 21px;
+  left: 2px;
 }
