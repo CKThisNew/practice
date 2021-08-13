@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Comparison operater & Boolean</h1>
+    <h2>===</h2>
+      document.write(1 === 1);
+    </script>
+    <script>
+      document.write(1 === 2);
+    </script>
+    <script>
+      document.write(1 < 2);
+    </script>
+    <script>
+      document.write(1 > 1);
+    </script>
+    <h1>Conditional statements</h1>
+    <script>
+      document.write("1<br>");
+      document.write("2<br>");
+      document.write("3<br>");
+      document.write("4<br>");
+    </script>
+    <h2>IF-true</h2>
+    <script>
+      document.write("1<br>");
+      if (true) {
+        document.write("2<br>");
+      } else {
+        document.write("3<br>");
+      }
+      document.write("4<br>");
+    </script>
+    <script>
+      document.write("1<br>");
+      if (false) {
+        document.write("2<br>");
+      } else {
+        document.write("3<br>");
+      }
+      d;
+      document.write("4<br>");
+    </script>
+    <input
+      type="button"
+      value="night"
+      onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';"
+    />
+    <input
+      type="button"
+      value="day"
+      onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';"
+    />
+    <!-- 조건문 -->
+    <input
+      id="night_day"
+      type="button"
+      value="night"
+      onclick="
+      if(document.querySelector('#night_day'). value ==='night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    document.querySelector('#night_day').value = 'day';}
+    else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('#night_day').value = 'night';
+    }"
+    />
+    <span>
+      ddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaawwwwwwwwqqqqqqqeeeeeeeeddddddddddddddddddxxxxxxxxx
+    </span>
+    <input
+      type="button"
+      value="night"
+      onclick="
+      if(this.value ==='night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'day';}
+    else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night';
+    }"
+    />
+  </body>
+</html>
