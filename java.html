@@ -5,6 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script>
+      function nightdayhandler(self) {
+        var target = document.querySelector("body");
+        if (self.value === "night") {
+          target.style.backgroundColor = "black";
+          target.style.color = "white";
+          self.value = "day";
+
+          var alist = document.querySelectorAll("a");
+          var i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "powderblue";
+            i = i + 1;
+          }
+        } else {
+          target.style.backgroundColor = "white";
+          target.style.color = "black";
+          self.value = "night";
+
+          var alist = document.querySelectorAll("a");
+          var i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "blue";
+            i = i + 1;
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <h1>Comparison operater & Boolean</h1>
@@ -82,19 +110,109 @@
       ddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
       aaaaaaaaaaaawwwwwwwwqqqqqqqeeeeeeeeddddddddddddddddddxxxxxxxxx
     </span>
+    <a href="#"><span>abcdefwer</span></a>
     <input
+      id="night_day"
       type="button"
       value="night"
       onclick="
-      if(this.value ==='night'){
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-    this.value = 'day';}
-    else {
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-    this.value = 'night';
-    }"
+     nightdayhandler(this); 
+    "
     />
+    <input
+      id="night_day"
+      type="button"
+      value="night"
+      onclick="
+   nightdayhandler(this); 
+  "
+    />
+
+    <h1>array</h1>
+    <h2>Syntax</h2>
+    <script>
+      var coworkers = ["egoing", "leezche"];
+    </script>
+    <h2>get</h2>
+    <script>
+      document.write(coworkers[0]);
+      document.write(coworkers[1]);
+    </script>
+
+    <h2>add</h2>
+    <script>
+      coworkers.push("duru");
+      coworkers.push("taeho");
+    </script>
+    <h2>count</h2>
+    <script>
+      document.write(coworkers.length);
+    </script>
+
+    <h1>loop</h1>
+    <ul>
+      <script>
+        document.write("<li>1</li>");
+        var i = 0;
+        while (i < 3) {
+          document.write("<li>2</li>");
+          document.write("<li>3</li>");
+          i = i + 1;
+        }
+        document.write("<li>4</li>");
+      </script>
+    </ul>
+
+    <h1>loop and array</h1>
+    <script>
+      var coworkers = ["ad", "bc", "cd", "dfdfdf"];
+    </script>
+    <h2>co workers</h2>
+    <ul>
+      <script>
+        var i = 0;
+        while (i < coworkers.length) {
+          document.write(
+            '<li><a href="#' + coworkers + '">' + coworkers[i] + "</a> </li>"
+          );
+          i = i + 1;
+        }
+      </script>
+    </ul>
+
+    <h2>basic</h2>
+    <ul>
+      <script>
+        function two() {
+          document.write("<li>2-1</li>");
+          document.write("<li>2-2</li>");
+        }
+        document.write("<li>1</li>");
+        two();
+        document.write("<li>3</li>");
+        two();
+      </script>
+    </ul>
+    <h2>parameter and argument</h2>
+    <script>
+      function oneplusone() {
+        document.write(1 + 1 + "<br>");
+      }
+      oneplusone();
+      function sum(left, right) {
+        document.write(left + right + "<br>");
+      }
+      sum(2, 3);
+      sum(3, 4);
+    </script>
+    <h2>return</h2>
+    <script>
+      function sum2(left, right) {
+        return left + right;
+      }
+      document.write(sum2(2, 3) + "<br>");
+      document.write('<div style="color:red">' + sum2(2, 3) + "</div>");
+      document.write('<div style="font-size:3rem;">' + sum2(2, 3) + "</div>");
+    </script>
   </body>
 </html>
