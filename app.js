@@ -1,10 +1,7 @@
-const player = {
-  name: "gw",
-  sayHello: function (otherPersonsName) {
-    console.log("hello " + otherPersonsName + " nice to meet you");
-  },
-};
+const h1 = document.querySelector(".hello:first-child h1");
 
-console.log(player.name);
-player.sayHello("lynn");
-player.sayHello("fuck");
+function handletitleclick() {
+  h1.classList.toggle("clicked");
+}
+
+h1.addEventListener("click", handletitleclick);
