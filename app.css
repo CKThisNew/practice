@@ -1,3 +1,139 @@
 .hidden {
   display: none;
 }
+
+.bgImg {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body {
+  color: white;
+
+  font-family: "Roboto Mono", monospace;
+}
+
+nav.state {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.time #clock {
+  font-size: 60px;
+}
+
+.time #greeting {
+  font-size: 30px;
+}
+
+.plan {
+  display: flex;
+  justify-content: center;
+}
+
+.loginbox {
+  display: flex;
+  justify-content: center;
+}
+
+
+.write {
+  border: none;
+  background-color: transparent;
+  font-size: 33px;
+  text-align: center;
+  margin-left: 50px;
+  
+}
+
+.ok {
+  border: none;
+  background-color: transparent;
+  font-size: 33px;
+  position: relative;
+  right: 40px;
+}
+
+.planbox {
+  display: flex;
+  justify-content: center;
+}
+
+.boxes {
+  border: none;
+  background-color: transparent;
+  padding-left: 20px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+
+.mylist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+  color: black;
+  margin-top: 25px;
+  line-height: 50px;
+}
+.scrollbox {
+  overflow: overlay;
+  height: 250px;
+  border: none;
+}
+
+.scrollbox::-webkit-scrollbar {
+  display: none;
+}
+
+.lishape {
+  list-style-type: lower-alpha;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.jsbutton {
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.jslistsize {
+  font-size: 30px;
+}
+
+.good-sentence {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 230px;
+  font-family: "UnifrakturMaguntia", cursive;
+  position: sticky;
+  bottom: 0;
+  color: black;
+}
+
+.

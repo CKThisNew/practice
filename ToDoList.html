@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Todolist</title>
+  </head>
+  <body>
+    <nav class="state">
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <section class="time">
+      <div class="timebomb">
+        <h2 id="clock">00:00</h2>
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+    </section>
+
+    <section class="loginbox">
+      <div class="putid">
+        <form class="hidden" id="login-form">
+          <input class = "write" re.padStart(2, "0");quired maxlength="15"
+          type="text" placeholder="당신은 누구십니까?" />
+          <input class="ok" type="submit" value="✏️" />
+        </form>
+      </div>
+    </section>
+    <section class="plan">
+      <div class="planbox">
+        <form id="todo-form">
+          <input
+            class="boxes"
+            type="text"
+            placeholder="오늘 계획을 적어주세요"
+            required
+          />
+        </form>
+      </div>
+    </section>
+
+    <section class="mylist">
+      <div class="scrollbox">
+        <ul id="todo-list"></ul>
+      </div>
+    </section>
+
+    <footer class="good-sentence">
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </footer>
+
+    <script src="greeting.js"></script>
+    <script src="clock.js"></script>
+    <script src="quotes.js"></script>
+    <script src="background.js"></script>
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
