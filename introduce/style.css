@@ -27,6 +27,9 @@
 
   /* border radious */
   --border-radious: 4px;
+
+  /* animation */
+  --animaiton-duration: 300ms;
 }
 
 * {
@@ -156,9 +159,17 @@ p {
   color: var(--color-white);
 }
 
+.home__contact:hover {
+  color: var(--color-black);
+}
+
 .section {
   text-align: center;
   padding: 50px;
+  margin: auto;
+}
+
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -180,4 +191,105 @@ p {
   border-radius: 50%;
   margin-bottom: 16px;
   color: #a0a7f2;
+}
+
+.major__icon i {
+  transition: all var(--animaiton-duration) ease;
+}
+
+.major__icon:hover i {
+  color: #626abf;
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major__title,
+.major__discription {
+  color: var(--color-dark-grey);
+}
+.major__discription {
+  font-size: var(--font-small);
+}
+
+.school {
+  display: flex;
+  align-items: center;
+}
+
+.school img {
+  width: 18 0px;
+  height: 100px;
+}
+
+.school__discription {
+  text-align: left;
+}
+
+.school__name,
+.school__period {
+  color: var(--color-light-grey);
+}
+
+.school__name {
+  font-size: var(--font-small);
+}
+
+.school__period {
+  font-size: var(--font-micro);
+}
+
+#skills {
+  background-color: #f2e1a2;
+}
+
+.skillset__title {
+  color: white;
+}
+
+.skillset {
+  display: flex;
+  background-color: #c7c9ff;
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: #626abf;
+  padding: 20px 40px;
+}
+
+.skill__discript {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill {
+  margin-bottom: 32px;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  height: 3px;
+  background-color: #f5efcb;
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: #9498f2;
+}
+
+.tools,
+.etc {
+  padding: 20px;
+}
+
+.etc span {
 }

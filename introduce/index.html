@@ -42,7 +42,7 @@
       <h2 class="home__description">코딩왕이 될 사나이입니다.</h2>
       <button class="home__contact">Contact Me</button>
     </section>
-    <section id="about" class="section">
+    <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>2021년 혜성 같이 등장한 코딩왕이 될 사나이..!</p>
       <div class="about__majors">
@@ -69,67 +69,71 @@
             alt="jeju uni"
             class="school__logo"
           />
-          <p class="school__name">제주대학교</p>
-          <p class="school__period">2015. 03 ~ 2021. 02</p>
+          <div class="school__discription">
+            <p class="school__name">제주대학교 언론홍보학과</p>
+            <p class="school__period">2015. 03 ~ 2021. 02</p>
+          </div>
         </div>
       </div>
     </section>
     <section id="skills" class="section">
-      <h1>Skills</h1>
-      <h2>Skills & Attributes</h2>
-      <p>
-        새로운것에 관심이 많다. 계획을 세우고 목표를 달성하는 것을 좋아한다.
-      </p>
-      <div class="skillset">
-        <div class="skillset__left">
-          <h3 class="skillset__title">Skills</h3>
-          <div class="skill">
-            <div class="skill_descript">
-              <span>HTML</span>
-              <span>99%</span>
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          새로운것에 관심이 많다. 계획을 세우고 목표를 달성하는 것을 좋아한다.
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__discript">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
             </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
+            <div class="skill">
+              <div class="skill__discript">
+                <span>CSS</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__discript">
+                <span>JavaScript</span>
+                <span>10%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 10%"></div>
+              </div>
             </div>
           </div>
-          <div class="skill">
-            <div class="skill_descript">
-              <span>CSS</span>
-              <span>70%</span>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+              </ul>
             </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>Photoshop cs6</span></li>
+              </ul>
             </div>
-          </div>
-          <div class="skill">
-            <div class="skill_descript">
-              <span>JavaScript</span>
-              <span>0.01%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
-          </div>
-        </div>
-        <div class="skillset__right">
-          <div class="tools">
-            <h3 class="skillset__title">Tools</h3>
-            <ul class="tools__list">
-              <li><span>Visual Studio Code</span></li>
-            </ul>
-          </div>
-          <div class="etc">
-            <h3 class="skillset__title">Etc</h3>
-            <ul class="etc__list">
-              <li><span>Git</span></li>
-              <li><span>Photoshop cs6</span></li>
-            </ul>
           </div>
         </div>
       </div>
     </section>
     <section id="work" class="section">
-      <h1>My work</h1>
+      <h1>My Work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
         <button class="category__btn">
