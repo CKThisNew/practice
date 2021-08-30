@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+}
+
+.firstform {
+  text-align: center;
+  margin-bottom: 25px;
+  background-color: blue;
+  color: white;
+}
+
+.secondform {
+  background-color: blueviolet;
+  color: white;
+}
+
+.secondform button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+#compare {
+  background-color: orange;
+  color: white;
+}
+
+#result {
+  background-color: rosybrown;
+  color: white;
+  font-size: 40px;
+}
