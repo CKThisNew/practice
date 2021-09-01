@@ -2,6 +2,15 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
+  background: beige;
+  font-size: 32px;
+}
+
+section {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFl7GdIw3JOIxyKCcGSX2q0_KKNv4tFma1mg&usqp=CAU")
+    no-repeat;
+  background-size: cover;
+  margin-top: 20%;
 }
 
 .D-Day__title {
@@ -9,15 +18,24 @@ body {
   justify-content: center;
   margin-bottom: 30px;
   margin-top: 50px;
+  color: orangered;
 }
 
 .clock-number {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-around;
+  color: black;
 }
 
 .clock-word {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  padding-bottom: 40px;
+  color: ;
 }
