@@ -1,14 +1,18 @@
 body {
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
-section {
-  width: 100px;
-  height: 100px;
+.D-Day__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .clock-number {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
 }
