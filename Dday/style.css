@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+section {
+  width: 100px;
+  height: 100px;
+}
+
+.clock-number {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.clock-word {
+  display: flex;
+  justify-content: space-around;
+}
