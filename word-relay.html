@@ -12,8 +12,15 @@
     <button>입력</button>
     <script>
       const number = parseInt(prompt("몇 명이 참가하나요?"), 10);
-      alert(number);
-      const yesOrNo = cofirm("맞나요?");
+      const $button = document.querySelector("button");
+      const $input = document.querySelector("input");
+
+      const OnClickButton = () => {};
+
+      const OnInput = (event) => {};
+
+      $button.addEventListener("click", OnClickButton);
+      $input.addEventListener("input", OnInput);
     </script>
   </body>
 </html>
