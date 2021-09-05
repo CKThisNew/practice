@@ -14,10 +14,45 @@
       const number = parseInt(prompt("몇 명이 참가하나요?"), 10);
       const $button = document.querySelector("button");
       const $input = document.querySelector("input");
+      let word; // 제시어
+      let newWord; // 새로 입력한 단어
+      const $word = document.querySelector("#word");
+      const $order = document.querySelector("#order");
 
-      const OnClickButton = () => {};
+      const OnClickButton = () => {
+        if (!word) {
+          //제시어가 비어있는가? // 비어있다.
+          word = newWord;
+          $word.textContent = word;
+          $input.value = "";
+          const order = Number($order.textContent);
+          if (order + 1 > number) {
+            $order.textContent = 1;
+          } else {
+            $order.textContent = order + 1;
+          }
+        } else {
+          //비어있지않다.
+          if (word[word.length - 1] === newWord[0]) {
+            word = newWord;
+            $word.textContent = word;
+            $input.value = "";
+            const order = Number($order.textContent);
+            if (order + 1 > number) {
+              $order.textContent = 1;
+            } else {
+              $order.textContent = order + 1;
+            }
+            //올바른가
+          } else {
+            //올바르지않은가
+          }
+        }
+      };
 
-      const OnInput = (event) => {};
+      const OnInput = (event) => {
+        newWord = event.target.value;
+      };
 
       $button.addEventListener("click", OnClickButton);
       $input.addEventListener("input", OnInput);
