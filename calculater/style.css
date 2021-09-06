@@ -1,0 +1,15 @@
+.boxsize {
+  border: 1px solid black;
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.result {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 185px;
+  height: 45px;
+  margin-left: 10px;
+}
