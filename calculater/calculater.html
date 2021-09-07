@@ -60,21 +60,54 @@
     let numTwo = "";
     const $operator = document.querySelector("#operator");
     const $result = document.querySelector("#result");
-    document.querySelector("#num-0").addEventListener("click", () => {});
-    document.querySelector("#num-1").addEventListener("click", () => {});
-    document.querySelector("#num-2").addEventListener("click", () => {});
-    document.querySelector("#num-3").addEventListener("click", () => {});
-    document.querySelector("#num-4").addEventListener("click", () => {});
-    document.querySelector("#num-5").addEventListener("click", () => {});
-    document.querySelector("#num-6").addEventListener("click", () => {});
-    document.querySelector("#num-7").addEventListener("click", () => {});
-    document.querySelector("#num-8").addEventListener("click", () => {});
-    document.querySelector("#num-9").addEventListener("click", () => {});
-    document.querySelector("#plus").addEventListener("click", () => {});
-    document.querySelector("#minus").addEventListener("click", () => {});
-    document.querySelector("#divide").addEventListener("click", () => {});
-    document.querySelector("#multiply").addEventListener("click", () => {});
-    document.querySelector("#calculate").addEventListener("click", () => {});
-    document.querySelector("#clear").addEventListener("click", () => {});
+    const OnclickNumber = (event) => {
+      if (!operator) {
+        // 비어있다.
+        numOne += event.target.textContent;
+        $result.value += event.target.textContent;
+        return;
+      }
+      if (!numTwo) {
+        $result.value = "";
+      }
+      numTwo += event.target.textContent;
+      $result.value += event.target.textContent; //비어있지 않다.
+    };
+    document.querySelector("#num-0").addEventListener("click", OnclickNumber);
+    document.querySelector("#num-1").addEventListener("click", OnclickNumber);
+    document.querySelector("#num-2").addEventListener("click", OnclickNumber);
+    document.querySelector("#num-3").addEventListener("click", OnclickNumber);
+    document.querySelector("#num-4").addEventListener("click", OnclickNumber);
+    document.querySelector("#num-5").addEventListener("click", OnclickNumber);
+    document.querySelector("#num-6").addEventListener("click", OnclickNumber);
+    document.querySelector("#num-7").addEventListener("click", OnclickNumber);
+    document.querySelector("#num-8").addEventListener("click", OnclickNumber);
+    document.querySelector("#num-9").addEventListener("click", OnclickNumber);
+
+    const OnclickOperator = (op) => () => {
+      if (numOne) {
+        operator = op;
+        $operator.value = op;
+      } else {
+        alert("숫자를 먼저 입력하세요");
+      }
+    };
+
+    document
+      .querySelector("#plus")
+      .addEventListener("click", OnclickOperator("+"));
+    document
+      .querySelector("#minus")
+      .addEventListener("click", OnclickOperator("-"));
+    document
+      .querySelector("#divide")
+      .addEventListener("click", OnclickOperator("/"));
+    document
+      .querySelector("#multiply")
+      .addEventListener("click", OnclickOperator("*"));
+    document
+      .querySelector("#calculate")
+      .addEventListener("click", OnclickOperator);
+    document.querySelector("#clear").addEventListener("click", OnclickOperator);
   </script>
 </body>
