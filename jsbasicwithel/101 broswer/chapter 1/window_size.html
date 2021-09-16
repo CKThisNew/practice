@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window Size</title>
+    <style>
+      .tag {
+        display: inline-block;
+        background-color: yellow;
+        padding: 16px;
+        margin: 16px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tag">Window Size</div>
+    <script>
+      const tag = document.querySelector(".tag");
+      function update() {
+        tag.innerHTML = `window.screen(모니터 크기): ${window.screen.width}, ${window.screen.height} <br/> 
+        window.outer(검색창포함넓이,높이) : ${window.outerWidth},${window.outerHeight}<br/>
+        window.inner(흰바탕넓이,높이) : ${window.innerWidth},${window.innerHeight}<br/>
+        documentElement.ClientWidth(내용넓이,높이) : ${document.documentElement.clientWidth},${document.documentElement.clientHeight}
+        `;
+      }
+      window.addEventListener("resize", () => {
+        update();
+      });
+      update();
+    </script>
+  </body>
+</html>
