@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .iv {
+        display: none;
+      }
+      div {
+        background-color: blueviolet;
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="alert" class="alert-box iv">
+      <p></p>
+      <button class="see">닫기</button>
+    </div>
+    <button class="watch">버튼1</button>
+    <button class="password">버튼2</button>
+  </body>
+  <script>
+    const $div = document.querySelector(".alert-box");
+    const $closeBtn = document.querySelector(".see");
+    const $watchAlert = document.querySelector(".watch");
+    const $p = document.querySelector("p");
+    const $passWord = document.querySelector(".password");
+
+    $watchAlert.addEventListener("click", (event) => {
+      $div.classList.remove("iv");
+      $p.textContent = "아이디를 입력하세요";
+    });
+
+    $closeBtn.addEventListener("click", (event) => {
+      $div.classList.add("iv");
+    });
+
+    $passWord.addEventListener("click", () => {
+      $div.classList.remove("iv");
+      $p.textContent = "비밀번호를 입력하세요";
+    });
+  </script>
+</html>
