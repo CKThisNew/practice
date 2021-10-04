@@ -12,6 +12,8 @@ function App() {
 
   let [따봉, 따봉변경] = useState(0);
 
+  let [modal, modal변경] = useState(false);
+
   function 제목바꾸기() {
     let newArray = [...글제목];
     newArray[0] = "삼양 여행지 추천";
@@ -50,7 +52,14 @@ function App() {
         <p> 10월 3일 발행</p>
         <hr />
       </div>
-      <Modal></Modal>
+      <button
+        onClick={() => {
+          modal변경(!modal);
+        }}
+      >
+        버튼
+      </button>
+      {modal === true ? <Modal></Modal> : null}
     </div>
   );
 }
