@@ -52,14 +52,35 @@ function App() {
         <p> 10월 3일 발행</p>
         <hr />
       </div>
+
+      {글제목.map(function (a) {
+        return (
+          <div className="list">
+            <h3>
+              {a}
+              <span
+                onClick={() => {
+                  따봉변경(따봉 + 1);
+                }}
+              >
+                ❤️
+              </span>
+              {따봉}
+            </h3>
+            <p> 10월 3일 발행</p>
+            <hr />
+          </div>
+        );
+      })}
+
       <button
         onClick={() => {
           modal변경(!modal);
         }}
       >
-        버튼
+        열고닫는버튼
       </button>
-      {modal === true ? <Modal></Modal> : null}
+      {modal === true ? <Modal 글제목={글제목}></Modal> : null}
     </div>
   );
 }
@@ -68,10 +89,10 @@ function App() {
 // 자주 변경되는 HTML UI들
 // 다른 페이지로 만들 때 컴포넌트 사용
 
-function Modal() {
+function Modal(props) {
   return (
     <div className="modal">
-      <h2>제목</h2>
+      <h2>{props.글제목[2]}</h2>
       <p>날짜</p>
       <p>상세내용</p>
     </div>
