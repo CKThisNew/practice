@@ -5,12 +5,12 @@ import "./App.css";
 
 function App() {
   let [글제목, 글제목변경] = useState([
-    "전라도 여행",
-    "경상도 여행",
-    "경기도 여행",
+    "함양 여행지",
+    "제주도 여행지",
+    "광주 여행지",
   ]);
 
-  let [추천, 추천변경] = useState(0);
+  let [추천수, 추천수변경] = useState(0);
 
   let [모달, 모달변경] = useState(false);
 
@@ -29,28 +29,28 @@ function App() {
                 누른제목변경(i);
               }}
             >
-              {a}
+              {a}{" "}
               <span
                 onClick={() => {
-                  추천변경(추천 + 1);
+                  추천수변경(추천수 + 1);
                 }}
               >
                 👍🏻
               </span>
-              <span>{추천}</span>
+              <span>{추천수}</span>
             </h3>
-            <span>10월 5일 발행</span>
+
+            <p>10월 3일 발간</p>
             <hr />
           </div>
         );
       })}
-
       <button
         onClick={() => {
           모달변경(!모달);
         }}
       >
-        열고닫기
+        열닫버튼
       </button>
       {모달 === true ? (
         <Modal 글제목={글제목} 누른제목={누른제목}></Modal>
@@ -63,8 +63,8 @@ function Modal(props) {
   return (
     <div className="modal">
       <h2>{props.글제목[props.누른제목]}</h2>
-      <p>날짜</p>
       <p>내용</p>
+      <p>본문</p>
     </div>
   );
 }
