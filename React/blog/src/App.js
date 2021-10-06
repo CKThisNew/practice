@@ -16,14 +16,17 @@ function App() {
 
   let [누른제목, 누른제목변경] = useState(0);
 
+  let [입력값, 입력값변경] = useState("");
+
   return (
     <div className="App">
       <div className="black-nav">
         <div>개발 Blog</div>
       </div>
+
       {글제목.map((a, i) => {
         return (
-          <div className="list">
+          <div className="list" key={i}>
             <h3
               onClick={() => {
                 누른제목변경(i);
@@ -45,6 +48,24 @@ function App() {
           </div>
         );
       })}
+
+      <div className="publish">
+        <input
+          onChange={(e) => {
+            입력값변경(e.target.value);
+          }}
+        ></input>
+        <button
+          onClick={() => {
+            let arrayCopy = [...글제목];
+            arrayCopy.unshift(입력값);
+            글제목변경(arrayCopy);
+          }}
+        >
+          저장
+        </button>
+      </div>
+
       <button
         onClick={() => {
           모달변경(!모달);
