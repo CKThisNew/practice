@@ -16,7 +16,7 @@ function App() {
 
   let [누른제목, 누른제목변경] = useState(0);
 
-  let [입력값, 입력값변경] = useState("");
+  let [입력, 입력변경] = useState("");
 
   return (
     <div className="App">
@@ -52,14 +52,14 @@ function App() {
       <div className="publish">
         <input
           onChange={(e) => {
-            입력값변경(e.target.value);
+            입력변경(e.target.value);
           }}
         ></input>
         <button
           onClick={() => {
-            let arrayCopy = [...글제목];
-            arrayCopy.unshift(입력값);
-            글제목변경(arrayCopy);
+            let copyArray = [...글제목];
+            copyArray.push(입력);
+            글제목변경(copyArray);
           }}
         >
           저장
@@ -73,6 +73,7 @@ function App() {
       >
         열닫버튼
       </button>
+
       {모달 === true ? (
         <Modal 글제목={글제목} 누른제목={누른제목}></Modal>
       ) : null}
