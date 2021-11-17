@@ -7,11 +7,13 @@ function App() {
   let [클릭, 클릭변경] = useState([0, 2, 4]);
   let [날짜, 날짜변경] = useState(["2월18일", "2월 19일", "2월 20일"]);
   let [modal, modal변경] = useState(false);
+  let [누른제목, 누른제목변경] = useState(0);
+  let [입력값, 입력값변경] = useState("");
 
-  function 따봉들변경(i) {
-    let new클릭Array = [...클릭];
-    new클릭Array[i]++;
-    클릭변경(new클릭Array);
+  function 개별따봉(i) {
+    let newArray = [...클릭];
+    newArray[i]++;
+    클릭변경(newArray);
   }
 
   return (
@@ -19,15 +21,18 @@ function App() {
       <div className="black-nav">
         <div>개발발</div>
       </div>
-
       {글제목.map((a, i) => {
         return (
           <div className="list" key={i}>
-            <h3>
+            <h3
+              onClick={() => {
+                누른제목변경(i);
+              }}
+            >
               {a}
               <span
                 onClick={() => {
-                  따봉들변경(i);
+                  개별따봉(i);
                 }}
               >
                 👍🏻 {클릭[i]}
@@ -39,6 +44,26 @@ function App() {
         );
       })}
 
+      <div className="publish">
+        <input
+          onChange={(e) => {
+            입력값변경(e.target.value);
+          }}
+        />
+        <button
+          onClick={() => {
+            let 새로운글제목 = [...글제목];
+            새로운글제목.unshift(입력값);
+            글제목변경(새로운글제목);
+            let 추가된따봉수 = [...클릭];
+            추가된따봉수.unshift(0);
+            클릭변경(추가된따봉수);
+          }}
+        >
+          저장
+        </button>
+      </div>
+
       <button
         onClick={() => {
           modal변경(!modal);
@@ -46,18 +71,19 @@ function App() {
       >
         버튼
       </button>
-
-      {modal === true ? <Modal /> : null}
+      {modal === true ? (
+        <Modal 글제목={글제목} 날짜={날짜} 누른제목={누른제목} />
+      ) : null}
     </div>
   );
 }
 
-function Modal() {
+function Modal(props) {
   return (
     <>
       <div className="modal">
-        <h2>제목</h2>
-        <p>날짜</p>
+        <h2>{props.글제목[props.누른제목]}</h2>
+        <p>{props.날짜[0]}</p>
         <p>상제 내용</p>
       </div>
       <div></div>
